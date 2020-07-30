@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Search Antibiotic Resistance Genes</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/search.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+
+<body id="main">
+
+	<h1>Search for Antibiotic Resistance Gene</h1>
+    <form name="gene_search" id="gene_search" action="">
+        <select name="parameter">
+            <option value="">Select a search parameter</option>
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="description">Description</option>
+        </select>
+        <input name="search_term" type="search" value="" autofocus="autofocus" placeholder="Enter a search term"/>
+        <input name="submit" type="submit" id="submit" value="Submit">
+    </form>
+    <section id='results'>
+        <p>
+            <span id='match_count'>0</span> match(es) found.
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <td>ID</td>
+                <td>Label</td>
+                <td>Description</td>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- this will be filled in by javascript when there are results -->
+            </tbody>
+    </section>
+
+</body>
+
+</html>

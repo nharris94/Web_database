@@ -1,0 +1,44 @@
+body {
+    font: small 'Lucida Grande', Verdana, Arial, sans-serif;
+    background-color: #a3a3c2;
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+form#gene_search {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+/* the results section should be initially invisible */
+section#results {
+    display: none;
+    position: relative;
+    top: 50px;
+}
+
+p {
+    text-align:center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table thead td {
+    font-weight: bold;
+}
+
+table td {
+    border: 1px solid rgb(200,200,200);
+    padding: 2px 10px;
+}
